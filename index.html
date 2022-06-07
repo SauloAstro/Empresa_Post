@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Match</title>  
+    <link rel="stylesheet" href="/style/estilo.css">
+
+</head>
+<body>
+    <div class="conteiner">  <!-- conteiner Principal  -->   
+        <div class="form-image"> <!-- div para coloar a imagem ao lado do formulario-->
+            <img src="style/imagem_principal.svg" alt="imagem de formulario">
+        </div>
+        <div class="form"> <!-- div para formatar o formulario -->
+            <form method="post" action="/php/info.php">
+                <div class="form-header">
+                    <div class="title">
+                        <h1> Cadastro De Produto</h1>
+                    </div>
+                </div>
+
+                <div class="input-group"> 
+                    <div class="input-box">
+                        <label for="produtoNome">Nome Do Produto</label>
+                        <input type="text" name = 'produtoNome' placeholder="Nome do produto" required = "Campo Obrigatório">
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="categoriaproduto">Categoria</label>
+                        <input type="Text" name = 'categoriaproduto' placeholder="Exemplo : Eletronico" required = "Campo Obrigatório">
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="marcaProduto">Marca</label>
+                        <input type="text" name = 'marcaProduto' placeholder="Exemplo : Apple" required = "Campo Obrigatório">
+                    </div>
+
+
+
+                    <div class="input-box">
+                        <label for="qntProduto">Quantidade</label>
+                        <input type="number" name = "qntProduto" placeholder="Quantidade De Produto" required = "Campo Obrigatório">
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="fornecedoraProduto">Fornecedora</label>
+                        <input type="text" name = 'fornecedoraProduto' placeholder="Digite a fornecedora do produto" required = "Campo Obrigatório">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="dataCompra">Data De Compra </label>
+                        <input type="date" name = 'dataCompra' placeholder="Informe a data da compra" required = "Informe a data da compra">
+                    </div>
+
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+    
+    
+
+
+</body>
+</html>
